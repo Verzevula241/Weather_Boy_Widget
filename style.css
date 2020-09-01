@@ -1,0 +1,128 @@
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background: #d3d3d3;
+    background-repeat: no-repeat;
+    min-height:100%;
+}
+
+.container{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 640px;    
+    background-color: #FFF;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.app-name{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-name p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    padding: 20px 16px 24px;
+    display: block;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-color: rgba(202, 202, 202, 0.7);
+}
+
+.info_container{
+    min-width: 30%;
+    text-align: left;
+    display: block;
+    float: right;
+    font-size: large;
+}
+
+.weather_img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.weather_img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.weather_value{
+    width: 150px;
+    height:60px;
+}
+
+.weather_value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+
+
+.weather_description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+.weather_location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: left;
+    font-size: x-large;
+}
+
+.DayDate p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: left;
+    font-size: medium;
+}
