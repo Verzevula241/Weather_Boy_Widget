@@ -10,7 +10,7 @@ const windWeather = document.querySelector(".wind span");//значение ск
 const notification = document.querySelector(".notification");//уведомление
 const cityImg = document.querySelector(".container");//основной контейнер
 const weather = {};//объект для храниения значений
-var newimg=document.createElement("img");//пустая картинка
+let newimg=document.createElement("img");//пустая картинка
 
 
 
@@ -65,16 +65,16 @@ function displayWeather(){
     windWeather.innerHTML = weather.speed;
     locationWeather.innerHTML = `${weather.city}`;
     cityImg.style.backgroundImage = "url('"+imgMap(newimg,weather.lon,weather.lat).src+"')";
-    Today.innerHTML = Day_of_Week();
-    var lastChar = weather.iconId[weather.iconId.length -1];
+    Today.innerHTML = Day_of_Week()
+    let lastChar = weather.iconId[weather.iconId.length -1]
     switch(lastChar){
         case 'd':{
-            changeBackground('linear-gradient(to right, #f5f7fa, #c3cfe2)');
-            break;
+            changeBackground('linear-gradient(to right, #f5f7fa, #c3cfe2)')
+            break
         }
         case 'n':{
-            changeBackground('linear-gradient(to right, #232526, #414345)');
-            break;
+            changeBackground('linear-gradient(to right, #232526, #414345)')
+            break
         }
     }
     
@@ -82,11 +82,11 @@ function displayWeather(){
 
 //функция для поиска дня недели
 function Day_of_Week() {
-    let days = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"];
-    var d = new Date();
-    var n = d.getDay();
-    var day = days[n-1];
-    return day;
+    let days = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"]
+    let d = new Date(),
+    n = d.getDay(),
+    day = days[n-1]
+    return day
   }
 //функция отображения сообщения об ошибке
 function showError(error){
